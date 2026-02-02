@@ -1,8 +1,12 @@
-import React from 'react'
+type AddNewCourseProps = {
+  onClick: () => void
+}
 
-const AddNewCourse = () => {
+const AddNewCourse = ({ onClick }: AddNewCourseProps) => {
   return (
-    <button className="add-new-course-button">Add new course</button>
+    <button type="button" className="add-new-course-button" onClick={onClick}>
+      Add new course
+    </button>
   )
 }
 
