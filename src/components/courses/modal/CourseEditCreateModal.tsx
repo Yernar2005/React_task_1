@@ -53,6 +53,7 @@ const CourseEditCreateModal = ({ onClose, onCreateCourse }: CourseEditCreateModa
     if (!name) return
     const newAuthor: Author = { id: `author-${Date.now()}`, name }
     setAllAuthors((prev) => [...prev, newAuthor])
+    setCourseAuthors((prev) => (prev.some((a) => a.id === newAuthor.id) ? prev : [...prev, newAuthor]))
     setAuthorName('')
   }
 

@@ -24,7 +24,7 @@ function App() {
       title: data.title,
       description: data.description,
       duration: data.duration,
-      authors: data.authors,
+      authors: data.authors.map((a) => ({ id: a.id, name: a.name })),
       creationDate: new Date().toISOString().slice(0, 10),
     }
     setCourses((prev) => [newCourse, ...prev])
