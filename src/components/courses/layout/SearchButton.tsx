@@ -1,8 +1,12 @@
-import React from 'react'
+type SearchButtonProps = {
+  onClick: () => void
+}
 
-const SearchButton = () => {
+const SearchButton = ({ onClick }: SearchButtonProps) => {
   return (
-    <button className="search-button">Search</button>
+    <button type="button" className="search-button" onClick={onClick}>
+      Search
+    </button>
   )
 }
 

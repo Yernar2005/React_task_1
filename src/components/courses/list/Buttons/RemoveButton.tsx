@@ -1,10 +1,18 @@
-import React from 'react'
-import icon from "../../../../assets/Icon-Trash.svg";
-import "./index.css";
+import icon from '../../../../assets/Icon-Trash.svg'
+import './index.css'
 
-const RemoveButton = () => {
+type RemoveButtonProps = {
+  onRemove: () => void
+}
+
+const RemoveButton = ({ onRemove }: RemoveButtonProps) => {
   return (
-    <button type="button" className="remove-button" aria-label="Удалить курс">
+    <button
+      type="button"
+      className="remove-button"
+      aria-label="Удалить курс"
+      onClick={onRemove}
+    >
       <img src={icon} alt="" />
     </button>
   )

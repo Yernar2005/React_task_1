@@ -18,9 +18,10 @@ type Course = {
 
 type CoursesListProps = {
   courses: Course[]
+  onRemoveCourse: (courseId: string) => void
 }
 
-const CoursesList = ({ courses }: CoursesListProps) => {
+const CoursesList = ({ courses, onRemoveCourse }: CoursesListProps) => {
   return (
     <ul className="courses-list-items">
       {courses.map((course) => (
@@ -46,7 +47,7 @@ const CoursesList = ({ courses }: CoursesListProps) => {
 
               <div className="courses-list-item-actions" role="group" aria-label="Действия с курсом">
                 <ShowButton />
-                <RemoveButton />
+                <RemoveButton onRemove={() => onRemoveCourse(course.id)} />
                 <EditButton />
               </div>
             </footer>

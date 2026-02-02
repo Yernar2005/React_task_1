@@ -1,11 +1,24 @@
 import CoursesList from './CoursesList'
-import mockCoursesList from '../../../mockCoursesList'
 import './index.css'
 
-const Index = () => {
+type Course = {
+  id: string
+  title: string
+  description: string
+  duration: number
+  authors: { id: string; name: string }[]
+  creationDate: string
+}
+
+type CoursesListIndexProps = {
+  courses: Course[]
+  onRemoveCourse: (courseId: string) => void
+}
+
+const Index = ({ courses, onRemoveCourse }: CoursesListIndexProps) => {
   return (
     <section className="courses-list" aria-label="Список курсов">
-      <CoursesList courses={mockCoursesList} />
+      <CoursesList courses={courses} onRemoveCourse={onRemoveCourse} />
     </section>
   )
 }
