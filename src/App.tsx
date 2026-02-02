@@ -1,11 +1,13 @@
 import './App.css'
-
+import Layout from './components/courses/layout/index.tsx'
+import CoursesList from "./components/courses/list/index.tsx"
 function App() {
 
 
   return (
     <>
-      <h1>Hello World</h1>
+      <Layout/>
+      <CoursesList />
     </>
   )
 }

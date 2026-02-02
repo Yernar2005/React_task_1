@@ -1,0 +1,69 @@
+.courses-list-items{
+    padding: 25px 50px;
+    gap: 30px;
+display: flex;
+flex-direction: column;
+
+}
+.courses-list-item{
+    display: flex;
+    align-items: flex-start;
+    border-left-width: 3px;
+    flex-direction: row;
+    padding: 5px 20px;
+    border-left: 8px solid rgb(0, 0, 0);
+}
+.courses-list-item-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 65%;
+}
+
+.courses-list-item-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.courses-list-item-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.courses-list-item-info{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 35%;
+}
+.courses-list-item-info-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.courses-list-item-actions{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.courses-list-item-action-button{
+    color: #fff;
+    background-color: #007298;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 36px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    width: 150px;
+    height: 50px;
+}
+.courses-list-item-info-item-text{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
