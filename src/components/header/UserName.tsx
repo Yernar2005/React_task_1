@@ -3,7 +3,7 @@ import './index.css'
 
 const UserName = () => {
   return (
-    <div className="user-name">Harry Potter</div>
+    <h3 className="user-name">Harry Potter</h3>
   )
 }
 
