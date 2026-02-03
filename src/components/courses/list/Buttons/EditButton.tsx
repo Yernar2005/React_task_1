@@ -1,6 +1,5 @@
-import React from 'react'
-import icon from "../../../../assets/Icon-Edit.svg";
-import "./index.css";
+import icon from '../../../../assets/Icon-Edit.svg'
+import './index.css'
 
 const EditButton = () => {
   return (

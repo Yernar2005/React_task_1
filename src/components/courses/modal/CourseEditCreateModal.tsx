@@ -67,10 +67,6 @@ const CourseEditCreateModal = ({ onClose, onCreateCourse }: CourseEditCreateModa
     setCourseAuthors((prev) => prev.filter((a) => a.id !== authorId))
   }
 
-  const removeAuthorFromCourse = (authorId: string) => {
-    setCourseAuthors((prev) => prev.filter((a) => a.id !== authorId))
-  }
-
   const durationNum = duration === '' ? 0 : Number(duration)
 
   useEffect(() => {
